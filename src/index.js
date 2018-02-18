@@ -8,7 +8,7 @@ module.exports = function zeros(expression) {  //  //Expression contains only fa
        buffer =  factorials[i].split(/(!)/g);        //split by ! including !
        number = buffer.shift();
        phase = buffer.join("");
-       summ = multiply(summ, bigFactorial(number,phase));            //zeros += zerosInFactorial(number, phase);
+       summ = multiply(summ, bigFactorial(number,phase));          
     }
 
     for(var i = summ.length - 1; summ.charAt(i) == "0"; i--){
